@@ -1,0 +1,53 @@
+body{
+  font-size:180%;
+  margin: 0px auto 0px auto;
+  /*position:relative;*/
+  font-family: 'Play', sans-serif;
+  /*overflow:hidden;*/
+}
+
+#save-rule{
+  position:absolute;
+  bottom:5px;
+  right:5px;
+  cursor:pointer;
+}
+
+#story-elements{
+  position:absolute;
+  margin:50px;
+  z-index:999999;
+  padding:15px;
+  border-radius:5px;
+  background:white;
+  border:1px solid #909090;
+}
+
+#continue{
+  font-size:50%;
+  border:1px solid #999999;
+  color:#909090;
+  width:110px;
+  padding:5px;
+  border-radius:10px;
+  text-align:center;
+  float:right;
+}
+
+#continue:hover{
+  cursor:pointer;
+  background:white;
+}
+
+#world{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+
+.cell{
+  position:absolute;
+  background:black;
+  opacity:0.4;
+  border-radius:20px;
+}

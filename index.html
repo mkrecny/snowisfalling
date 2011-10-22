@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <link href='stylesheets/main.css' media='all' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="javascripts/narrative.js"></script>
+    <script src="javascripts/law.js"></script>
+    <script src="javascripts/automata.js"></script>
+    <title>Snow is Falling : a Code Puzzle</title>
+  </head>
+  <body>
+    <div id="world"></div>
+    <!-- story goes here --> 
+    <div id="story-elements">
+      <div id="narrative-text">
+        
+      </div>
+      <br>
+      <div id="continue">continue</div>
+    </div>
+  </body>
+  <script type='text/javascript'>
+    jQuery(document).ready(function(){
+      Automata.init(Law);
+      Narrative.init();
+      Narrative.play(0);
+    });
+  </script>
+  <!--
+
+    If you're reading this you're on the right track
+    ------------------------------------------------
+      I can't tell you who we are, but I'd like to give you a few pointers.
+
+      > Solutions to this problem should be emailed to:
+        snow.code.puzzle [at] gmail [dot] com
+        
+      > You can communicate with us on twitter @snowcoder
+
+      > There are 2 acceptable outcomes to this problem.
+        1. (harder) Make the snow behave in a complex way (maybe a snowman will self-assemble!)
+        2. (easier) Make the snow fall in a downwards direction
+        
+
+      > A solution might come in one of the following forms:
+          1. An edited or new law.js 
+          2. A edited or new automata.js
+          3. A piece of text containing your thoughts on how to approach this problem.
+          4. 1 & 2 & 3
+          5. Something else entirely.
+
+      > Don't be afraid to think outside of the automata :-)
+
+      Good luck.
+  -->
+</html>
